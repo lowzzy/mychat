@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">ログイン</h1>
+      <div id="login_container">
+        <form id="login" action="">
+          <p>ユーザ名を入力</p>
+          <input type="text" id="input_name" autocomplete="off" />
+          <button type="submit">OK</button>
+        </form>
+      </div>
+      <div class="disable" id="message_container">
+        <form id="message" action="">
+          <input type="text" id="input_message" autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <ul class="disable" id="message_list"></ul>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
